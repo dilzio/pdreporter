@@ -124,7 +124,7 @@ func main() {
 	startDate := flag.String("since", "", "date in format: 2016-04-27")
 	endDate := flag.String("until", "", "date in format: 2016-04-27")
 	flag.Parse()
-	fmt.Printf("Called with params: since:%s until:%s", *startDate, *endDate)
+	fmt.Printf("Called with params: endpoint: %s tz: %s token: %s, since:%s until:%s\n", *endpoint, *timeZone, *token, *startDate, *endDate)
 
 	respStruct := new(IncidentsResponse)
 	groupedByServiceMap := make(map[string][]Incident)
