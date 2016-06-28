@@ -11,7 +11,6 @@ import (
 	"time"
 )
 
-//const url string = "https://eyeota.pagerduty.com/api/v1/incidents?since=%sT00%%3A00%%3A00SGT&until=%sT23%%3A59%%3A59SGT&time_zone=Singapore&offset=%d"
 const url string = "https://%s/api/v1/incidents?since=%sT00%%3A00%%3A00SGT&until=%sT23%%3A59%%3A59SGT&time_zone=%s&offset=%d"
 
 type IncidentsResponse struct {
